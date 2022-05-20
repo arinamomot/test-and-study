@@ -24,6 +24,9 @@ app.use(
     limit: "50mb",
   })
 );
+
+app.use(haltOnTimedout)
+
 app.use(
   cors({
     credentials: true,

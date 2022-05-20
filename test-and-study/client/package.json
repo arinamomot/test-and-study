@@ -53,6 +53,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "start": "next start -p $PORT",
     "test": "next test",
     "eject": "next eject",
     "format": "prettier --write ."
@@ -73,5 +74,8 @@
     "@types/jquery": "^3.5.14",
     "prettier": "2.5.1",
     "typescript-plugin-css-modules": "^3.4.0"
-  }
+  },
+  "cacheDirectories": [
+    ".next/cache"
+  ]
 }

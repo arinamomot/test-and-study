@@ -292,6 +292,7 @@ const ResponseQuestions = ({
                                       marginRight: "10px",
                                       marginBottom: "10px",
                                       marginTop: "5px",
+                                      width: "500px"
                                     }}
                                   />
                                 </label>
