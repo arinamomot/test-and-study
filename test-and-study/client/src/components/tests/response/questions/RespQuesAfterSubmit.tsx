@@ -238,11 +238,13 @@ const RespQuesAfterSubmit = ({
                                       value={answers[i]?.userAnswers}
                                       type={ques.questionType}
                                       required={ques.required}
+                                      multiline
                                       style={{
                                         backgroundColor: `${color} !important`,
                                         marginRight: "10px",
                                         marginBottom: "10px",
                                         marginTop: "5px",
+                                        width: "350px"
                                       }}
                                     />
                                   </label>
