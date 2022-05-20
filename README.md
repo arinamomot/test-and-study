@@ -1,6 +1,6 @@
 # test-and-study
 
-To run the project, run the following commands:
+To run the project, run the following commands in terminal:
 
 git clone https://github.com/arinamomot/test-and-study.git</br>
 npm install </br>
