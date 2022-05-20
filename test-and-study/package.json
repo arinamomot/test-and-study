@@ -1,0 +1,61 @@
+{
+  "name": "testquiz",
+  "jest": {
+    "verbose": true
+  },
+  "version": "1.0.0",
+  "description": "Mern stack web app for creating and passing tests",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
+    "test": "jest",
+    "test-api": "newman run test/api/Test&Study.postman_collection.json",
+    "server": "nodemon app.js",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\" ",
+    "format": "concurrently \"prettier --write .\" \"npm run format --prefix client\" "
+  },
+  "keywords": [
+    "mern",
+    "react",
+    "javascript",
+    "test"
+  ],
+  "author": "Arina Momot <arinamomot@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "config": "^3.2.4",
+    "connect-timeout": "^1.9.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "expect": "^28.1.0",
+    "express": "^4.17.3",
+    "express-fileupload": "^1.3.1",
+    "express-validator": "^6.11.1",
+    "gridfs-stream": "^1.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.4.0",
+    "mongoose": "^6.2.2",
+    "multer": "^1.4.4",
+    "multer-gridfs-storage": "^5.0.2",
+    "nodemailer": "^6.7.2",
+    "shortid": "^2.2.15",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.2",
+    "cross-env": "^6.0.3",
+    "jest": "^28.1.0",
+    "nodemon": "^2.0.2",
+    "prettier": "2.5.1"
+  },
+  "engines": {
+    "node": "14.17.5"
+  }
+}
