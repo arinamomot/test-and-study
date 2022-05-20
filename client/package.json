@@ -52,8 +52,8 @@
   },
   "scripts": {
     "dev": "next dev",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "next build",
+    "start": "next start",
     "test": "next test",
     "eject": "next eject",
     "heroku-postbuild": "npm run build",
