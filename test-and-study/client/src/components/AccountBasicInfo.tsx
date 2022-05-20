@@ -140,12 +140,12 @@ const AccountBasicInfo = () => {
   const validateName = (name: string, type: string) => {
     switch (type) {
       case "fn":
-        /^[a-zA-Z]+$/.test(name)
+        /^[ěščřžýáíéóúůďťňĎŇŤŠČŘŽÝÁÍÉÚŮĚÓa-zA-Z]+$/.test(name)
           ? setCheckFirstName(false)
           : setCheckFirstName(true);
         break;
       case "ln":
-        /^[a-zA-Z]+$/.test(name)
+        /^[ěščřžýáíéóúůďťňĎŇŤŠČŘŽÝÁÍÉÚŮĚÓa-zA-Z]+$/.test(name)
           ? setCheckLastName(false)
           : setCheckLastName(true);
         break;

@@ -66,14 +66,14 @@ const Auth = () => {
   const validateFName = (firstName: string) => {
     if (firstName === "") setCheckFName(true);
     else setCheckFName(false);
-    if (/^[ a-zA-Z\-\’]+$/.test(firstName)) setCheckFName(false);
+    if (/^[ěščřžýáíéóúůďťňĎŇŤŠČŘŽÝÁÍÉÚŮĚÓa-zA-Z\-\’]+$/.test(firstName)) setCheckFName(false);
     else setCheckFName(true);
   };
 
   const validateLName = (lastName: string) => {
     if (lastName === "") setCheckLName(true);
     else setCheckLName(false);
-    if (/^[ a-zA-Z\-\’]+$/.test(lastName)) setCheckLName(false);
+    if (/^[ěščřžýáíéóúůďťňĎŇŤŠČŘŽÝÁÍÉÚŮĚÓa-zA-Z\-\’]+$/.test(lastName)) setCheckLName(false);
     else setCheckLName(true);
   };
 

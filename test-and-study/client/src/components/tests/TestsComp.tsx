@@ -1,6 +1,6 @@
 import SearchIcon from "@material-ui/icons/Search";
 import SwapVertOutlinedIcon from "@mui/icons-material/SwapVertOutlined";
-import { InputAdornment, TextField, Tooltip } from "@mui/material";
+import {InputAdornment, TextField, Tooltip} from "@mui/material";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
@@ -8,12 +8,12 @@ import MenuItem from "@mui/material/MenuItem";
 import Pagination from "@mui/material/Pagination";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import { observer } from "mobx-react-lite";
-import React, { useContext, useEffect, useState } from "react";
-import { ITest } from "../../models/ITest";
-import { ITopic } from "../../models/ITopic";
-import { IUser } from "../../models/IUser";
-import { Context } from "../../pages/_app";
+import {observer} from "mobx-react-lite";
+import React, {useContext, useEffect, useState} from "react";
+import {ITest} from "../../models/ITest";
+import {ITopic} from "../../models/ITopic";
+import {IUser} from "../../models/IUser";
+import {Context} from "../../pages/_app";
 import CreateDialog from "../CreateDialog";
 import CardComp from "./CardComp";
 import usePagination from "./Pagination";
@@ -398,6 +398,7 @@ const TestsComp = () => {
             ))}
         </Box>
       </Box>
+      {tests.length > 0 &&
       <Stack sx={{ mt: 2, mb: 2 }} className="centered" spacing={2}>
         <Pagination
           count={count}
@@ -405,7 +406,7 @@ const TestsComp = () => {
           shape="rounded"
           onChange={handleChange}
         />
-      </Stack>
+      </Stack>}
     </>
   );
 };

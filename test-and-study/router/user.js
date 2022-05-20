@@ -13,9 +13,7 @@ router.post(
     min: 8,
     max: 32,
   }),
-  body("firstName", "First name must contain only letters").isAlpha(),
   body("firstName", "First name must be greater than 1").isLength({ min: 2 }),
-  body("lastName", "Last name must contain only letters").isAlpha(),
   body("lastName", "Last name must be greater than 1").isLength({ min: 2 }),
   userController.registration
 );
@@ -38,9 +36,7 @@ router.put(
   "/updateAccount",
   body("email").isEmail(),
   body("email", "Email is required and cannot be empty.").notEmpty(),
-  body("firstName", "First name must contain only letters").isAlpha(),
   body("firstName", "First name must be greater than 1").isLength({ min: 2 }),
-  body("lastName", "Last name must contain only letters").isAlpha(),
   body("lastName", "Last name must be greater than 1").isLength({ min: 2 }),
   authMiddleware,
   userController.updateAccount
