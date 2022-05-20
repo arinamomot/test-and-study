@@ -1,0 +1,22 @@
+.h1 {
+  color: red;
+}
+
+.box {
+  margin: 0.5rem 0 8rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 1rem 3rem;
+}
+
+.textField {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.textField:hover {
+  color: lightgray;
+}
