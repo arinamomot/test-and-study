@@ -1,5 +1,5 @@
-import { observer } from "mobx-react-lite";
 import { Box, Chip, Typography } from "@mui/material";
+import { observer } from "mobx-react-lite";
 
 const ChangeTestInfo = () => {
   return (
@@ -30,7 +30,7 @@ const ChangeTestInfo = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/testEvaluation.png"
+        src={"../docs/testEvaluation.png"}
         alt="testEvaluation"
       />
       <Typography paragraph>
@@ -46,7 +46,7 @@ const ChangeTestInfo = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/colorBeige.png"
+        src={"../docs/colorBeige.png"}
         alt="colorBeige"
       />
       <Typography paragraph>
@@ -65,7 +65,7 @@ const ChangeTestInfo = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/testTypes.png"
+        src={"../docs/testTypes.png"}
         alt="testTypes"
       />
       <Typography paragraph>
@@ -78,7 +78,7 @@ const ChangeTestInfo = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/testImage.png"
+        src={"../docs/testImage.png"}
         alt="test"
       />
       <Typography>
@@ -92,7 +92,7 @@ const ChangeTestInfo = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/testImageUpload.png"
+        src={"../docs/testImageUpload.png"}
         alt="test"
       />
       <Typography>Done, your test now has an image.</Typography>
@@ -103,7 +103,7 @@ const ChangeTestInfo = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/testImageUploaded.png"
+        src={"../docs/testImageUploaded.png"}
         alt="testImageUploaded"
       />
     </Box>

@@ -15,7 +15,7 @@ const Logo = ({ width, height }: LogoProps) => {
 
   return (
     <Box onClick={handleClick} sx={{ cursor: "pointer" }}>
-      <img width={width} height={height} src="/static/logo.svg" />
+      <img width={width} height={height} src={'../images/logo.svg'} />
     </Box>
   );
 };

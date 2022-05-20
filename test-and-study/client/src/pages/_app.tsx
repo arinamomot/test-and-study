@@ -25,16 +25,16 @@ function App({ Component, pageProps }: AppProps) {
       {/*<ThemeProvider theme={theme}>*/}
       <Head>
         <title>Test&Study</title>
-        <link rel="icon" href="../../public/favicon.ico" />
+        <link rel="icon" href={"../favicon.ico"} />
         <link
           rel="manifest"
-          href="../../public/manifest.json"
+          href={"../manifest.json"}
           crossOrigin="use-credentials"
         />
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
-        <link rel="apple-touch-icon" href="../../public/logo.svg" />
+        <link rel="apple-touch-icon" href={"../../public/logo.svg"} />
 
         <meta name="keywords" content="test, tests" />
         <meta charSet="utf-8" />

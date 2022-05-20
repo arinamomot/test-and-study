@@ -1,5 +1,5 @@
-import { observer } from "mobx-react-lite";
 import { Box, Typography } from "@mui/material";
+import { observer } from "mobx-react-lite";
 
 const ChangeAccInfo = () => {
   return (
@@ -20,7 +20,7 @@ const ChangeAccInfo = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/openSettings.png"
+        src={"../docs/openSettings.png"}
         alt="openSettings"
       />
       <img
@@ -30,7 +30,7 @@ const ChangeAccInfo = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/profile.png"
+        src={"../docs/profile.png"}
         alt="profile"
       />
       <Typography>
@@ -47,7 +47,7 @@ const ChangeAccInfo = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/changeAcc.png"
+        src={"../docs/changeAcc.png"}
         alt="upload1"
       />
 
@@ -62,7 +62,7 @@ const ChangeAccInfo = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/upload1.png"
+        src={"../docs/upload1.png"}
         alt="upload1"
       />
       <Typography>
@@ -76,7 +76,7 @@ const ChangeAccInfo = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/upload2.png"
+        src={"../docs/upload2.png"}
         alt="upload2"
       />
       <Typography>
@@ -91,7 +91,7 @@ const ChangeAccInfo = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="38px"
-        src="../../../static/docs/header.png"
+        src={"../docs/header.png"}
         alt="header"
       />
       <img
@@ -101,7 +101,7 @@ const ChangeAccInfo = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/upload3.png"
+        src={"../docs/upload3.png"}
         alt="upload3"
       />
 
@@ -121,7 +121,7 @@ const ChangeAccInfo = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/deleteAcc.png"
+        src={"../docs/deleteAcc.png"}
         alt="deleteAcc"
       />
       <img
@@ -131,7 +131,7 @@ const ChangeAccInfo = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/deleteAccConfirm.png"
+        src={"../docs/deleteAccConfirm.png"}
         alt="deleteAccConfirm"
       />
     </Box>

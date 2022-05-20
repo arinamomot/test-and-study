@@ -1,5 +1,5 @@
-import { observer } from "mobx-react-lite";
 import { Box, Chip, Typography } from "@mui/material";
+import { observer } from "mobx-react-lite";
 
 const TestActions = () => {
   return (
@@ -17,7 +17,7 @@ const TestActions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="330px"
-        src="../../../static/docs/saveTest.png"
+        src={"../docs/saveTest.png"}
         alt="saveTest"
       />
       <img
@@ -27,7 +27,7 @@ const TestActions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="380px"
-        src="../../../static/docs/saveTest2.png"
+        src={"../docs/saveTest2.png"}
         alt="saveTest2"
       />
 
@@ -43,7 +43,7 @@ const TestActions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/preview1.png"
+        src={"../docs/preview1.png"}
         alt="preview1"
       />
 
@@ -58,7 +58,7 @@ const TestActions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/preview2.png"
+        src={"../docs/preview2.png"}
         alt="preview2"
       />
 
@@ -73,7 +73,7 @@ const TestActions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/share1.png"
+        src={"../docs/share1.png"}
         alt="share1"
       />
       <img
@@ -83,7 +83,7 @@ const TestActions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/share2.png"
+        src={"../docs/share2.png"}
         alt="share2"
       />
       <Typography>
@@ -98,7 +98,7 @@ const TestActions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/share3.png"
+        src={"../docs/share3.png"}
         alt="share3"
       />
       <Typography>
@@ -118,7 +118,7 @@ const TestActions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/share4.png"
+        src={"../docs/share4.png"}
         alt="share4"
       />
 
@@ -135,7 +135,7 @@ const TestActions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/run1.png"
+        src={"../docs/run1.png"}
         alt="run1"
       />
       <Typography>
@@ -149,7 +149,7 @@ const TestActions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/run2.png"
+        src={"../docs/run2.png"}
         alt="run2"
       />
       <Typography>
@@ -165,7 +165,7 @@ const TestActions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/run3.png"
+        src={"../docs/run3.png"}
         alt="run3"
       />
       <Typography>
@@ -178,7 +178,7 @@ const TestActions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/run4.png"
+        src={"../docs/run4.png"}
         alt="run4"
       />
 
@@ -199,7 +199,7 @@ const TestActions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/submitTest1.png"
+        src={"../docs/submitTest1.png"}
         alt="submitTest1"
       />
       <Typography>
@@ -222,7 +222,7 @@ const TestActions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/testSub.png"
+        src={"../docs/testSub.png"}
         alt="testSub"
       />
       <img
@@ -232,7 +232,7 @@ const TestActions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/testSub2.png"
+        src={"../docs/testSub2.png"}
         alt="testSub2"
       />
 
@@ -256,7 +256,7 @@ const TestActions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/testSub5.png"
+        src={"../docs/testSub5.png"}
         alt="testSub5"
       />
 
@@ -272,7 +272,7 @@ const TestActions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/saveAnswer1.png"
+        src={"../docs/saveAnswer1.png"}
         alt="saveAnswer1"
       />
       <img
@@ -282,7 +282,7 @@ const TestActions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="380px"
-        src="../../../static/docs/saveAnswer2.png"
+        src={"../docs/saveAnswer2.png"}
         alt="saveAnswer2"
       />
 
@@ -298,7 +298,7 @@ const TestActions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/responsesAll.png"
+        src={"../docs/responsesAll.png"}
         alt="responsesAll"
       />
       <Typography>
@@ -314,7 +314,7 @@ const TestActions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/responsesExports.png"
+        src={"../docs/responsesExports.png"}
         alt="responsesExports"
       />
       <Typography>
@@ -331,7 +331,7 @@ const TestActions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/responsesCSV.png"
+        src={"../docs/responsesCSV.png"}
         alt="responsesCSV"
       />
     </Box>

@@ -24,6 +24,7 @@ import { Context } from "../pages/_app";
 import style from "../styles/auth.module.scss";
 import BackButton from "./BackButton";
 import TermsOfUseModal from "./TermsOfUseModal";
+import AlertComp from "./AlertComp";
 
 const theme = createTheme({
   palette: {
@@ -83,6 +84,12 @@ const Auth = () => {
         setOpen={setTermsOfUseOpen}
         setCheck={setCheck}
       />
+      {userStore.alertBox.show && (
+          <AlertComp
+              type={userStore.alertBox.type}
+              message={userStore.alertBox.message}
+          />
+      )}
       <ThemeProvider theme={theme}>
         <BackButton pageName={"main"} href={"/"} />
         <Container component="main" sx={{ width: "50%" }}>

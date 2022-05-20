@@ -1,5 +1,5 @@
-import { observer } from "mobx-react-lite";
 import { Box, Chip, Typography } from "@mui/material";
+import { observer } from "mobx-react-lite";
 
 const Pages = () => {
   return (
@@ -15,7 +15,7 @@ const Pages = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/mainPage.png"
+        src={"../docs/mainPage.png"}
         alt="mainPage"
       />
 
@@ -31,7 +31,7 @@ const Pages = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/tests.png"
+        src={"../docs/tests.png"}
         alt="tests"
       />
 
@@ -49,7 +49,7 @@ const Pages = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/testsSearch.png"
+        src={"../docs/testsSearch.png"}
         alt="testsSearch"
       />
 
@@ -83,7 +83,7 @@ const Pages = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/responses.png"
+        src={"../docs/responses.png"}
         alt="responses"
       />
       <Typography>
@@ -98,7 +98,7 @@ const Pages = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/respSearch.png"
+        src={"../docs/respSearch.png"}
         alt="respSearch"
       />
       <br />
@@ -129,7 +129,7 @@ const Pages = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/welcome1.png"
+        src={"../docs/welcome1.png"}
         alt="welcome1"
       />
       <img
@@ -139,7 +139,7 @@ const Pages = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/welcome2.png"
+        src={"../docs/welcome2.png"}
         alt="welcome2"
       />
 
@@ -161,7 +161,7 @@ const Pages = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/registration.png"
+        src={"../docs/registration.png"}
         alt="registration"
       />
 
@@ -178,7 +178,7 @@ const Pages = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/login.png"
+        src={"../docs/login.png"}
         alt="login"
       />
     </Box>

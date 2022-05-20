@@ -85,7 +85,7 @@ const CardComp = ({
           <CardMedia
             component="img"
             height="110"
-            image="../static/images/b.jpg"
+            image="../images/b.jpg"
             alt="image"
           />
         )}

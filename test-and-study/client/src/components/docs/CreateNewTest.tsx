@@ -1,5 +1,5 @@
-import { observer } from "mobx-react-lite";
 import { Box, Typography } from "@mui/material";
+import { observer } from "mobx-react-lite";
 
 const CreateNewTest = () => {
   return (
@@ -15,7 +15,7 @@ const CreateNewTest = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/testsCreateTest.png"
+        src={"../docs/testsCreateTest.png"}
         alt="testsCreateTest"
       />
       <Typography paragraph>
@@ -29,7 +29,7 @@ const CreateNewTest = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/createTest.png"
+        src={"../docs/createTest.png"}
         alt="createTest"
       />
       <Typography paragraph>
@@ -44,7 +44,7 @@ const CreateNewTest = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/test.png"
+        src={"../docs/test.png"}
         alt="test"
       />
       <img
@@ -54,7 +54,7 @@ const CreateNewTest = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/newTest.png"
+        src={"../docs/newTest.png"}
         alt="newTest"
       />
       <img
@@ -64,7 +64,7 @@ const CreateNewTest = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/noResponses.png"
+        src={"../docs/noResponses.png"}
         alt="noResponses"
       />
       <img
@@ -74,7 +74,7 @@ const CreateNewTest = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/noMembers.png"
+        src={"../docs/noMembers.png"}
         alt="noMembers"
       />
     </Box>

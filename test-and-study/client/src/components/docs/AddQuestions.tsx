@@ -1,5 +1,5 @@
-import { observer } from "mobx-react-lite";
 import { Box, Typography } from "@mui/material";
+import { observer } from "mobx-react-lite";
 
 const AddQuestions = () => {
   return (
@@ -15,7 +15,7 @@ const AddQuestions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/addQues.png"
+        src={"../docs/addQues.png"}
         alt="addQuestion"
       />
       <Typography>
@@ -32,7 +32,7 @@ const AddQuestions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/question.png"
+        src={"../docs/question.png"}
         alt="question"
       />
       <Typography>
@@ -52,7 +52,7 @@ const AddQuestions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="385x"
-        src="../../../static/docs/questionTypes.png"
+        src={"../docs/questionTypes.png"}
         alt="quesTypes"
       />
       <Typography>
@@ -65,7 +65,7 @@ const AddQuestions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/question2.png"
+        src={"../docs/question2.png"}
         alt="question"
       />
       <Typography>
@@ -79,7 +79,7 @@ const AddQuestions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/answerKey.png"
+        src={"../docs/answerKey.png"}
         alt="answerKey"
       />
 
@@ -103,7 +103,7 @@ const AddQuestions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/answerView.png"
+        src={"../docs/answerView.png"}
         alt="answerView"
       />
 
@@ -118,7 +118,7 @@ const AddQuestions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/deleteAnsFeed.png"
+        src={"../docs/deleteAnsFeed.png"}
         alt="deleteAnsFeed"
       />
       <Typography>
@@ -132,7 +132,7 @@ const AddQuestions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/textAnswer.png"
+        src={"../docs/textAnswer.png"}
         alt="textAnswer"
       />
 
@@ -148,7 +148,7 @@ const AddQuestions = () => {
           boxShadow: "0px 6px 5px #ccc",
         }}
         height="350px"
-        src="../../../static/docs/changeOrder.png"
+        src={"../docs/changeOrder.png"}
         alt="changeOrder"
       />
     </Box>
