@@ -39,7 +39,6 @@ router.post("/runIncorrect/:testId", testController.runIncorrect);
 router.get("/members/:testId", authMiddleware, testController.getTestMembers);
 router.get(
   "/answers/:respId",
-  authMiddleware,
   testController.getResponseAnswers
 );
 router.delete("/deleteTests", authMiddleware, testController.deleteAllTests);

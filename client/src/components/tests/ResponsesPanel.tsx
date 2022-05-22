@@ -32,7 +32,7 @@ const ResponsesPanel = ({
   const [responsesToExport, setResponsesToExport] = useState<any[]>([]);
 
   useEffect(() => {
-    const rs: IResponse[] = [...responses];
+    const rs: IResponse[] = JSON.parse(JSON.stringify([...responses]));
     let countId = 1;
     for (let i = 0; i < rs.length; i++) {
       rs[i].id = (countId++).toString();
@@ -59,6 +59,7 @@ const ResponsesPanel = ({
 
   const handleShowResponse = async (resp: IResponse, userEmail: string) => {
     await testStore.showMemberResponse(resp, userEmail);
+    console.log(resp)
   };
 
   return (
