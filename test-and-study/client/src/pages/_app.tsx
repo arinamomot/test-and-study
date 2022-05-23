@@ -32,10 +32,6 @@ function App({ Component, pageProps }: AppProps) {
           crossOrigin="use-credentials"
         />
 
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-        <link rel="apple-touch-icon" href={"../../public/logo.svg"} />
-
         <meta name="keywords" content="test, tests" />
         <meta charSet="utf-8" />
       </Head>
