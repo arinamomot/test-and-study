@@ -42,72 +42,72 @@ a {
 }
 
 .darkButton {
-  border-color: black;
-  text-align: center;
-  color: black;
+  border-color: black !important;
+  text-align: center !important;
+  color: black !important;
 }
 
 .lightButton {
-  border-color: white;
-  text-align: center;
-  color: white;
+  border-color: white !important;
+  text-align: center !important;
+  color: white !important;
 }
 
 .darkButton:hover {
-  background-color: black;
-  color: white;
-  border: 1px solid black;
+  background-color: black !important;
+  color: white !important;
+  border: 1px solid black !important;
 }
 
 .lightButton:hover {
-  border-color: lightgray;
-  color: lightgray;
+  border-color: lightgray !important;
+  color: lightgray !important;
 }
 
 .lightButton:disabled {
-  border-color: #a8a7a7;
-  color: #a8a7a7;
+  border-color: #a8a7a7 !important;
+  color: #a8a7a7 !important;
 }
 
 .darkButton:disabled {
-  border-color: gray;
-  color: gray;
+  border-color: gray !important;
+  color: gray !important;
 }
 
 .actionButton {
-  background-color: black;
-  color: white;
+  background-color: black !important;
+  color: white !important;
 }
 
 .actionButton:hover {
-  background-color: black;
-  color: gray;
+  background-color: black !important;
+  color: gray !important;
 }
 
 .actionButton:disabled {
-  border-color: gray;
-  color: gray;
+  border-color: gray !important;
+  color: gray !important;
 }
 
 .redButton {
-  background-color: #ff3131;
-  color: white;
-  border: 1px solid #ff3131;
+  background-color: #ff3131 !important;
+  color: white !important;
+  border: 1px solid #ff3131 !important;
 }
 
 .redButton:hover {
-  background-color: #d73333;
-  color: white;
-  border: 1px solid #d73333;
+  background-color: #d73333 !important;
+  color: white !important;
+  border: 1px solid #d73333 !important;
 }
 
 .mainSection {
-  background-color: #f4f4f9;
+  background-color: #f4f4f9 !important;
   height: 100%;
   margin-bottom: 2rem;
   margin-top: 2rem;
-  border-top: 1.5px solid #f1f1f5;
-  border-bottom: 1.5px solid #f1f1f5;
+  border-top: 1.5px solid #f1f1f5 !important;
+  border-bottom: 1.5px solid #f1f1f5 !important;
   padding: 3rem;
 }
 

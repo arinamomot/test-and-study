@@ -10,10 +10,22 @@ import { IUser } from "../models/IUser";
 import { Context } from "../pages/_app";
 import CreateDialog from "./CreateDialog";
 import CardComp from "./tests/CardComp";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 interface MainSectionProps {
   title: string;
 }
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "rgb(255,255,255)",
+    },
+    secondary: {
+      main: "rgb(0,0,0)",
+    },
+  },
+});
 
 const MainSection = ({ title }: MainSectionProps) => {
   const { testStore } = useContext(Context);
@@ -77,6 +89,7 @@ const MainSection = ({ title }: MainSectionProps) => {
         open={dialogOpen}
         setOpen={setDialog}
       />
+      <ThemeProvider theme={theme}>
       <Grid container alignItems="center">
         <Grid>
           <Typography m="1rem" variant="h5" component="h5">
@@ -116,6 +129,7 @@ const MainSection = ({ title }: MainSectionProps) => {
             />
           ))}
       </Box>
+      </ThemeProvider>
     </>
   );
 };

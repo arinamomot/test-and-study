@@ -9,9 +9,9 @@
 }
 
 .buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .darkButton:not(:last-child) {
@@ -19,10 +19,10 @@
 }
 
 .block {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  margin: auto !important;
+  display: flex !important;
+  justify-content: center !important;
+  text-align: center !important;
 }
 
 .mainText {

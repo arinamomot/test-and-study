@@ -3,9 +3,23 @@ import Button from "@mui/material/Button";
 import Router from "next/router";
 import Clean from "../utils/clean";
 
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "rgb(0,0,0)",
+    },
+    secondary: {
+      main: "rgb(255,255,255)",
+    },
+  },
+});
+
 const MainButtons = () => {
   return (
     <>
+      <ThemeProvider theme={theme}>
       <Box sx={{ mt: "5rem" }} justifyContent={"center"} display="flex">
         <Button
           className="darkButton"
@@ -47,6 +61,7 @@ const MainButtons = () => {
           Documentation
         </Button>
       </Box>
+      </ThemeProvider>
     </>
   );
 };

@@ -12,6 +12,20 @@ import { ITestType } from "../models/ITestType";
 import { Context } from "../pages/_app";
 import TestService from "../services/TestService";
 
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "rgb(0,0,0)",
+    },
+    secondary: {
+      main: "rgb(255,255,255)",
+    },
+  },
+});
+
+
 interface CreateDialogProps {
   open: boolean;
   setOpen: (open: boolean) => void;
@@ -52,6 +66,7 @@ const CreateDialog = ({ open, setOpen, setTestCreated }: CreateDialogProps) => {
   };
 
   return (
+      <ThemeProvider theme={theme}>
     <Dialog open={open} fullWidth maxWidth="sm">
       <DialogTitle sx={{ m: 0, p: 2 }}>
         Create Test
@@ -121,6 +136,7 @@ const CreateDialog = ({ open, setOpen, setTestCreated }: CreateDialogProps) => {
         </Button>
       </DialogActions>
     </Dialog>
+      </ThemeProvider>
   );
 };
 

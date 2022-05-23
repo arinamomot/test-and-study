@@ -3,12 +3,26 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "rgb(255,255,255)",
+    },
+    secondary: {
+      main: "rgb(0,0,0)",
+    },
+  },
+});
+
 interface InfoProps {
   setOpen: (open: boolean) => void;
 }
 
 const InfoAbout = ({ setOpen }: InfoProps) => {
   return (
+      <ThemeProvider theme={theme}>
     <Box className="mainSpace">
       <Button
         className="lightButton"
@@ -51,6 +65,7 @@ const InfoAbout = ({ setOpen }: InfoProps) => {
         <br />
       </Typography>
     </Box>
+      </ThemeProvider>
   );
 };
 
