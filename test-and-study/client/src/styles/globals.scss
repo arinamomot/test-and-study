@@ -352,15 +352,15 @@ a {
 }
 
 .backButtonTestView {
-  border-color: black;
-  text-align: center;
-  color: black;
+  border-color: black !important;
+  text-align: center !important;
+  color: black !important;
 }
 
 .backButtonTestView:hover {
-  color: white;
-  text-align: center;
-  background-color: black;
+  color: white !important;
+  text-align: center !important;
+  background-color: black !important;
 }
 
 .select {

@@ -1,11 +1,11 @@
 .type {
-  color: white;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin: 0;
-  padding-top: 8rem;
-  padding-bottom: 2rem;
+  color: white !important;
+  align-items: center !important;
+  justify-content: center !important;
+  display: flex !important;
+  margin: 0 !important;
+  padding-top: 8rem !important;
+  padding-bottom: 2rem !important;
 }
 
 .buttons {
@@ -26,9 +26,9 @@
 }
 
 .mainText {
-  color: #fff;
-  background-color: rgba(108, 101, 101, 0.8);
-  padding: 0 9px;
-  border-radius: 10px;
-  margin: 3rem;
+  color: #fff !important;
+  background-color: rgba(108, 101, 101, 0.8) !important;
+  padding: 0 9px !important;
+  border-radius: 10px !important;
+  margin: 3rem !important;
 }

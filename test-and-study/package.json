@@ -8,9 +8,6 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "build": "cd client && npm run build",
-    "install-client": "cd client && npm install",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
     "test": "jest",
     "test-api": "newman run test/api/Test&Study.postman_collection.json",
     "server": "nodemon app.js",
