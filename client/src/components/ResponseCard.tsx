@@ -1,8 +1,5 @@
 import DeleteIcon from "@mui/icons-material/Delete";
-import { Chip } from "@mui/material";
-import { List } from "@mui/material";
-import { ListItem } from "@mui/material";
-import { Tooltip } from "@mui/material";
+import { Chip, List, ListItem, Tooltip } from "@mui/material";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
@@ -12,13 +9,23 @@ import Grid from "@mui/material/Grid";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import { observer } from "mobx-react-lite";
-import { useContext } from "react";
-import { useEffect } from "react";
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { IResponse } from "../models/IResponse";
 import { ITest } from "../models/ITest";
 import { Context } from "../pages/_app";
 import AlertComp from "./AlertComp";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "rgb(0,0,0)",
+    },
+    secondary: {
+      main: "rgb(255,255,255)",
+    },
+  },
+});
 
 interface ResponseCardProps {
   key: number;
@@ -77,6 +84,7 @@ const ResponseCard = ({
 
   return (
     <>
+      <ThemeProvider theme={theme}>
       {testStore.alertBox.show && (
         <AlertComp
           type={testStore.alertBox.type}
@@ -198,6 +206,7 @@ const ResponseCard = ({
           </CardActions>
         </Card>
       )}
+      </ThemeProvider>
     </>
   );
 };

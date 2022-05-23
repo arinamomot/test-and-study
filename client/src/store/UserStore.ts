@@ -69,7 +69,8 @@ export default class UserStore {
       localStorage.setItem("token", response.data.accessToken);
       this.setAuth(true);
       this.setUser(response.data.user);
-      localStorage.setItem("token", response.data.user.id);
+      localStorage.setItem("currentUser", response.data.user.id);
+      localStorage.setItem("currentUserEmail", response.data.user.email);
       if (response.data.avatar) this.setAvatar(response.data.avatar);
       await Router.push("/main");
       this.setAlertBox(true, "success", "Successful login.");

@@ -1,16 +1,26 @@
 import SearchIcon from "@material-ui/icons/Search";
-import { InputAdornment } from "@mui/material";
-import { TextField } from "@mui/material";
+import { InputAdornment, TextField } from "@mui/material";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { observer } from "mobx-react-lite";
-import { useContext } from "react";
-import { useEffect } from "react";
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ITest } from "../models/ITest";
 import { IUser } from "../models/IUser";
 import { Context } from "../pages/_app";
 import ResponseCard from "./ResponseCard";
+
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "rgb(0,0,0)",
+    },
+    secondary: {
+      main: "rgb(255,255,255)",
+    },
+  },
+});
 
 const ResponsesContent = () => {
   const { testStore } = useContext(Context);
@@ -59,6 +69,7 @@ const ResponsesContent = () => {
 
   return (
     <>
+      <ThemeProvider theme={theme}>
       <Box width="50%" mt={4} ml={10}>
         <TextField
           sx={{ mb: 1 }}
@@ -103,6 +114,7 @@ const ResponsesContent = () => {
             ))}
         </Box>
       </Box>
+      </ThemeProvider>
     </>
   );
 };

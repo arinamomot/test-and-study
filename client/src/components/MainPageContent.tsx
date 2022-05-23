@@ -3,12 +3,22 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { observer } from "mobx-react-lite";
 import TypeAnimation from "react-type-animation";
-import { SetStateAction } from "react";
-import { useState } from "react";
+import { SetStateAction, useState } from "react";
 import styles from "../styles/Home2.module.scss";
 import Footer from "./Footer";
 import InfoAbout from "./InfoAbout";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "rgb(255,255,255)",
+    },
+    secondary: {
+      main: "rgb(0,0,0)",
+    },
+  },
+});
 const MainPageContent = () => {
   const [value, setValue] = useState(0);
   const handleChange = (event: any, newValue: SetStateAction<number>) => {
@@ -19,6 +29,7 @@ const MainPageContent = () => {
 
   return (
     <>
+      <ThemeProvider theme={theme}>
       <Box className="body" height="100vh">
         {info && <InfoAbout setOpen={setInfo} />}
         <TypeAnimation
@@ -69,6 +80,7 @@ const MainPageContent = () => {
         </Box>
       </Box>
       <Footer />
+      </ThemeProvider>
     </>
   );
 };
