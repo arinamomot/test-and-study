@@ -8,6 +8,8 @@ This application will serve as an effective tool for checking the quality of kno
 
 ## The site is available at the link: 
 
+**Important note:** please use Google Chrome.
+
 - Deployed version of the app (full version): https://test-and-study.vercel.app/ 
 
 Here you can also sign in with data:
